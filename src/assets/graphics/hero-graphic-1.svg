@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#new2-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#new2-3);
+      }
+
+      .cls-3 {
+        fill: url(#new2-2);
+      }
+
+      .cls-4 {
+        fill: url(#new2-4);
+      }
+
+      .cls-5 {
+        fill: url(#New);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        fill: url(#new2);
+      }
+
+      .cls-8 {
+        fill: url(#New-3);
+      }
+
+      .cls-9 {
+        fill: url(#New-2);
+      }
+    </style>
+    <linearGradient id="New" x1="64" y1="960" x2="576" y2="64" gradientTransform="translate(-211.86 226.23) rotate(-29.74)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#80dbff"/>
+      <stop offset=".99" stop-color="#0075db"/>
+    </linearGradient>
+    <linearGradient id="New-2" data-name="New" x1="64" y1="576" x2="192" y2="64" gradientTransform="translate(-73.79 40.6) rotate(-14.04)" xlink:href="#New"/>
+    <linearGradient id="New-3" data-name="New" x1="448" y1="960" x2="960" y2="64" gradientTransform="translate(-161.27 416.74) rotate(-29.74)" xlink:href="#New"/>
+    <linearGradient id="linear-gradient" x1="832" y1="960" x2="960" y2="448" gradientTransform="translate(-143.99 238.33) rotate(-14.04)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#80dbff"/>
+      <stop offset=".99" stop-color="#0075db"/>
+    </linearGradient>
+    <linearGradient id="new2" x1="18.75" y1="237.25" x2="237.25" y2="18.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d9970"/>
+      <stop offset="1" stop-color="#38cccc"/>
+    </linearGradient>
+    <linearGradient id="new2-2" data-name="new2" x1="786.75" y1="1005.25" x2="1005.25" y2="786.75" xlink:href="#new2"/>
+    <linearGradient id="new2-3" data-name="new2" x1="18.75" y1="621.25" x2="621.25" y2="18.75" xlink:href="#new2"/>
+    <linearGradient id="new2-4" data-name="new2" x1="402.75" y1="1005.25" x2="1005.25" y2="402.75" xlink:href="#new2"/>
+    <linearGradient id="new2-5" data-name="new2" x1="18.75" y1="1005.25" x2="1005.25" y2="18.75" xlink:href="#new2"/>
+  </defs>
+  <rect class="cls-5" x="256" y="-3.98" width="128" height="1031.97" transform="translate(296.19 -91.3) rotate(29.74)"/>
+  <rect class="cls-9" x="64" y="56.12" width="128" height="527.76" transform="translate(81.43 -21.49) rotate(14.04)"/>
+  <rect class="cls-8" x="640" y="-3.98" width="128" height="1031.97" transform="translate(346.78 -281.82) rotate(29.74)"/>
+  <rect class="cls-6" x="832" y="440.12" width="128" height="527.76" transform="translate(197.49 -196.29) rotate(14.04)"/>
+  <path class="cls-7" d="M192,0c-17.67,0-33.67,7.16-45.25,18.75h0S18.75,146.75,18.75,146.75C7.16,158.33,0,174.33,0,192c0,35.35,28.65,64,64,64,17.67,0,33.67-7.16,45.25-18.75L237.25,109.25c11.58-11.58,18.75-27.58,18.75-45.25C256,28.65,227.35,0,192,0Z"/>
+  <path class="cls-3" d="M960,768c-17.67,0-33.67,7.16-45.25,18.75h0s-128,128-128,128c-11.58,11.58-18.75,27.58-18.75,45.25,0,35.35,28.65,64,64,64,17.67,0,33.67-7.16,45.25-18.75l128-128c11.58-11.58,18.75-27.58,18.75-45.25,0-35.35-28.65-64-64-64Z"/>
+  <path class="cls-2" d="M576,0c-17.67,0-33.67,7.16-45.25,18.75L18.75,530.75c-11.58,11.58-18.75,27.58-18.75,45.25,0,35.35,28.65,64,64,64,17.67,0,33.67-7.16,45.25-18.75L621.25,109.25c11.58-11.58,18.75-27.58,18.75-45.25,0-35.35-28.65-64-64-64Z"/>
+  <path class="cls-4" d="M960,384c-17.67,0-33.67,7.16-45.25,18.75L402.75,914.75c-11.58,11.58-18.75,27.58-18.75,45.25,0,35.35,28.65,64,64,64,17.67,0,33.67-7.16,45.25-18.75l512-512c11.58-11.58,18.75-27.58,18.75-45.25,0-35.35-28.65-64-64-64Z"/>
+  <path class="cls-1" d="M960,0c-17.67,0-33.67,7.16-45.25,18.75L18.75,914.75c-11.58,11.58-18.75,27.58-18.75,45.25,0,35.35,28.65,64,64,64,17.67,0,33.67-7.16,45.25-18.75L1005.25,109.25c11.58-11.58,18.75-27.58,18.75-45.25,0-35.35-28.65-64-64-64Z"/>
+</svg>

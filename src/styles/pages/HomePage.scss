@@ -1,0 +1,100 @@
+.home-page {
+
+    .hero-wrapper {
+        width: calc(1312 * var(--unit));
+        height: calc(440 * var(--unit));
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-header-container {
+        width: calc(640 * var(--unit));
+        height: calc(96 * var(--unit));
+        margin: calc(112 * var(--unit)) 0 0 0;
+    }
+
+    .hero-header-text {
+        width: calc(640 * var(--unit));
+        height: calc(96 * var(--unit));
+        display: flex;
+        align-items: center;
+        color: var(--b8);
+
+        &.en {
+            font: 500 calc(64 * var(--unit)) "Satoshi";
+        }
+
+        &.th {
+            font: 500 calc(64 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .hero-description-container {
+        width: calc(640 * var(--unit));
+        height: calc(56 * var(--unit));
+        margin: 0;
+    }
+
+    .hero-description-text {
+        width: calc(640 * var(--unit));
+        height: calc(56 * var(--unit));
+        display: flex;
+        align-items: flex-start;
+        color: var(--b8);
+
+        &.en {
+            font: 400 calc(16 * var(--unit)) "Satoshi";
+        }
+
+        &.th {
+            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .hero-button-container {
+        width: calc(160 * var(--unit));
+        height: calc(56 * var(--unit));
+        margin: calc(32 * var(--unit)) 0 0 0;
+    }
+
+    .hero-button {
+        width: calc(160 * var(--unit));
+        height: calc(56 * var(--unit));
+        border-radius: calc(16 * var(--unit));
+        border: 0;
+        background: var(--accent);
+        color: var(--background);
+
+        &.en {
+            font: 500 calc(16 * var(--unit)) "Satoshi";
+        }
+
+        &.th {
+            font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .hero-graphic-container {
+        width: 100vw;
+        height: calc(592 * var(--unit));
+        background: var(--background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(256 * var(--unit));
+    }
+
+    .hero-graphic {
+        width: calc(528 * var(--unit));
+        height: calc(528 * var(--unit));
+    }
+
+    .hero-graphic[data-set="hero-graphic-1"] {
+        background: url("../../assets/graphics/hero-graphic-1.svg");
+    }
+
+    .hero-graphic[data-set="hero-graphic-2"] {
+        background: url("../../assets/graphics/hero-graphic-2.svg");
+    }
+}
