@@ -1,0 +1,48 @@
+.primary-icon-container {
+    width: calc(56 * var(--unit));
+    height: calc(56 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+    background: var(--accent);
+    display: grid;
+    place-content: center;
+}
+
+.primary-icon {
+    width: calc(32 * var(--unit));
+    height: calc(32 * var(--unit));
+
+    &.figma {
+        background: url("../../assets/icons/figma-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.github {
+        background: url("../../assets/icons/github-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.react {
+        background: url("../../assets/icons/react-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.html {
+        background: url("../../assets/icons/html-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.css {
+        background: url("../../assets/icons/css-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.javascript {
+        background: url("../../assets/icons/javascript-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &.typescript {
+        background: url("../../assets/icons/typescript-icon.svg") no-repeat center;
+        background-size: cover;
+    }
+}
