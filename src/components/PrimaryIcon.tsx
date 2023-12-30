@@ -1,16 +1,33 @@
-import React from 'react';
-import "../styles/global/global.scss"
-import "../styles/components/PrimaryIconStyle.scss"
+import React, { useState } from 'react';
+import "../styles/global/global.scss";
+import "../styles/components/PrimaryIconStyle.scss";
+
 interface PrimaryIconProp {
     iconName: string;
+    hoverTitle: string;
 }
 
-const PrimaryIcon: React.FC<PrimaryIconProp> = ({ iconName }) => {
+const PrimaryIcon: React.FC<PrimaryIconProp> = ({ iconName, hoverTitle }) => {
+    const [isShowTitle, setIsShowTitle] = useState<boolean>(false);
+
+    const handleMouseEnter = () => {
+        setIsShowTitle(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsShowTitle(false);
+    };
+
     return (
-        <div className="primary-icon-container">
+        <button
+            className="primary-icon-container"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <span className={`primary-icon ${iconName}`}></span>
-        </div>
+            {isShowTitle ? <p className="primary-icon-title">{hoverTitle}</p> : null}
+        </button>
     );
-}
+};
 
 export default PrimaryIcon;

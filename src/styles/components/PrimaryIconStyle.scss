@@ -5,6 +5,7 @@
     background: var(--accent);
     display: grid;
     place-content: center;
+    border: 0;
 }
 
 .primary-icon {
@@ -45,4 +46,14 @@
         background: url("../../assets/icons/typescript-icon.svg") no-repeat center;
         background-size: cover;
     }
+}
+
+.primary-icon-title{
+    padding: calc(8 * var(--unit));
+    margin: calc(64 * var(--unit)) 0 0 0;
+    border-radius: calc(8 * var(--unit));
+    box-shadow: rgba(16, 131, 176, 0.2) 0px 7px 29px 0px;
+    background: var(--b0);
+    position: absolute;
+    font: 400 calc(16 * var(--unit)) "Satoshi";
 }

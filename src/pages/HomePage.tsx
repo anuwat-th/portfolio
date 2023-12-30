@@ -1,6 +1,5 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { getText } from "../constants/screens/HomePageText";
-import { setLanguage } from "../redux/reducers/languageReducer";
 import { RootState } from "../redux/store/store";
 
 import "../styles/global/global.scss"
@@ -8,21 +7,16 @@ import "../styles/pages/HomePage.scss"
 
 import PrimaryIcon from "../components/PrimaryIcon";
 import Footer from "../components/Footer";
+import ChangeLanguage from "../components/ChangeLanguage";
 
 const HomePage = () => {
 
     const language = useSelector((state: RootState) => state.language.language);
 
-    const dispatch = useDispatch();
-
-    const changeLanguage = (newLanguage: string) => {
-        dispatch(setLanguage(newLanguage));
-    };
-
     return (
         <div className="home-page">
-
             <div className="home-page-container">
+                <ChangeLanguage/>
                 <div className="hero-section">
                     <div className="hero-wrapper">
                         <div className="hero-header-container">
@@ -59,18 +53,18 @@ const HomePage = () => {
                                 <p className={`profile-skill-title-text  ${language}`}>{getText("bioToolTitle1Text")}</p>
                             </div>
                             <div className="icon-component-container">
-                                <PrimaryIcon iconName="figma" />
-                                <PrimaryIcon iconName="github" />
+                                <PrimaryIcon iconName="figma" hoverTitle="Figma" />
+                                <PrimaryIcon iconName="github"  hoverTitle="Github"/>
                             </div>
                             <div className="profile-skill-title-2-container">
                                 <p className={`profile-skill-title-text ${language}`}>{getText("bioToolTitle2Text")}</p>
                             </div>
                             <div className="icon-component-container">
-                                <PrimaryIcon iconName="react" />
-                                <PrimaryIcon iconName="html" />
-                                <PrimaryIcon iconName="css" />
-                                <PrimaryIcon iconName="javascript" />
-                                <PrimaryIcon iconName="typescript" />
+                                <PrimaryIcon iconName="react" hoverTitle="React and React Native"/>
+                                <PrimaryIcon iconName="html" hoverTitle="HTML"/>
+                                <PrimaryIcon iconName="css" hoverTitle="CSS"/>
+                                <PrimaryIcon iconName="javascript" hoverTitle="JavaScript"/>
+                                <PrimaryIcon iconName="typescript" hoverTitle="TypeScript"/>
                             </div>
                         </div>
                     </div>
@@ -91,8 +85,6 @@ const HomePage = () => {
                 </div>
                 <Footer />
             </div>
-            <button onClick={() => changeLanguage("en")}>English</button>
-            <button onClick={() => changeLanguage("th")}>Thai</button>
         </div>
     );
 }

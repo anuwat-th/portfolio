@@ -33,7 +33,7 @@
     .hero-description-container {
         width: calc(640 * var(--unit));
         height: calc(56 * var(--unit));
-        margin: 0;
+        margin: calc(8 * var(--unit)) 0 0 0;
     }
 
     .hero-description-text {
@@ -55,7 +55,7 @@
     .hero-button-container {
         width: calc(160 * var(--unit));
         height: calc(56 * var(--unit));
-        margin: calc(32 * var(--unit)) 0 0 0;
+        margin: calc(24 * var(--unit)) 0 0 0;
     }
 
     .hero-button {
