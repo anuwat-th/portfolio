@@ -57,3 +57,67 @@
     position: absolute;
     font: 400 calc(16 * var(--unit)) "Satoshi";
 }
+
+@media (max-width:512px) and (orientation: portrait) {
+    .primary-icon-container {
+        width: calc(96 * var(--unit));
+        height: calc(96 * var(--unit));
+        border-radius: calc(24 * var(--unit));
+        background: var(--accent);
+        display: grid;
+        place-content: center;
+        border: 0;
+    }
+    
+    .primary-icon {
+        width: calc(54 * var(--unit));
+        height: calc(54 * var(--unit));
+    
+        &.figma {
+            background: url("../../assets/icons/figma-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.github {
+            background: url("../../assets/icons/github-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.react {
+            background: url("../../assets/icons/react-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.html {
+            background: url("../../assets/icons/html-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.css {
+            background: url("../../assets/icons/css-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.javascript {
+            background: url("../../assets/icons/javascript-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    
+        &.typescript {
+            background: url("../../assets/icons/typescript-icon.svg") no-repeat center;
+            background-size: cover;
+        }
+    }
+    
+    .primary-icon-title{
+        padding: calc(16 * var(--unit));
+        margin: calc(96 * var(--unit)) 0 0 0;
+        border-radius: calc(14 * var(--unit));
+        box-shadow: rgba(16, 131, 176, 0.2) 0px 7px 29px 0px;
+        background: var(--b0);
+        position: absolute;
+        font: 400 calc(24 * var(--unit)) "Satoshi";
+    }
+    
+    
+}

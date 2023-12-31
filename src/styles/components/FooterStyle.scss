@@ -57,3 +57,66 @@
         }
     }
 }
+
+@media (max-width:512px) and (orientation: portrait) {
+    .footer {
+        width: 100vw;
+        height: calc(176 * var(--unit));
+        background: var(--b2);
+        display: flex;
+        flex-direction: column;
+    
+        .footer-text-container {
+            width: calc(432 * var(--unit));
+            height: calc(32 * var(--unit));
+            margin: calc(24 * var(--unit)) auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .footer-text {
+            color: var(--b7);
+            text-align: center;
+    
+            &.en {
+                font: 400 calc(16 * var(--unit)) "Satoshi";
+            }
+    
+            &.th {
+                font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+            }
+        }
+    
+        .footer-link-container {
+            width: calc(208 * var(--unit));
+            height: calc(48 * var(--unit));
+            margin: calc(32 * var(--unit)) auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .footer-link-icon {
+            width: calc(48 * var(--unit));
+            height: calc(48 * var(--unit));
+            border: 0;
+            cursor: pointer;
+    
+            &.linkedin {
+                background: url("../../assets/icons/linkedin-2-icon.svg") no-repeat center;
+                background-size: cover;
+            }
+    
+            &.figma {
+                background: url("../../assets/icons/figma-2-icon.svg") no-repeat center;
+                background-size: cover;
+            }
+    
+            &.github {
+                background: url("../../assets/icons/github-2-icon.svg") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+    
+}

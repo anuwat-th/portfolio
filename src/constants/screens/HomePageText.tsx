@@ -43,7 +43,7 @@ export const translations = {
         th: `มาเริ่มกันเลย`,
     },
     contractDescriptionText:{
-        en: `I’m looking for an opportunity on exciting workplace where had an interest in UX&UI design. Please contract by email.`,
+        en: `I’m looking for an opportunity on workplace where had an interest in UX&UI design. Please contract by email.`,
         th: `ผมกำลังมองหาโอกาสในสถานที่ที่น่าตื่นเต้นและเป็นที่ที่มีความสนใจในงานด้านการออกแบบ UX&UI โปรดติดต่อทางอีเมล`,
     },
     contractButton: {

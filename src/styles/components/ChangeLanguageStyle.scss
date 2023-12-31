@@ -38,12 +38,54 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         &.en {
             font: 400 calc(14 * var(--unit)) "IBM Plex Sans Thai";
         }
 
         &.th {
             font: 400 calc(14 * var(--unit)) "Satoshi";
+        }
+    }
+}
+
+@media (max-width:512px) and (orientation: portrait) {
+    .change-language {
+        width: calc(64 * var(--unit));
+        height: calc(64 * var(--unit));
+        z-index: 100;
+        position: fixed;
+        top: auto;
+        bottom: calc(48 * var(--unit));
+        left: auto;
+        right: calc(48 * var(--unit));
+        margin: 0;
+
+        .change-language-container {
+            width: calc(64 * var(--unit));
+            height: calc(64 * var(--unit));
+            border-radius: calc(32 * var(--unit));
+            background: var(--b0);
+            border: 0;
+            color: var(--b8);
+            display: flex;
+            padding: calc(8 * var(--unit));
+            transition: 0.3s;
+        }
+
+        .change-language-container:hover {
+            background: var(--accent);
+            color: var(--b0);
+        }
+
+        .change-language-icon {
+            width: calc(48 * var(--unit));
+            height: calc(48 * var(--unit));
+            font-size: calc(48 * var(--unit));
+        }
+
+        .change-language-name {
+            display: none;
         }
     }
 }
