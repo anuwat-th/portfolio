@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+    .large-navbar {
+        width: 100vw;
+        height: calc(56 * var(--unit));
+        background: var(--b0);
+    }
+
+    .large-navbar-wrapper {
+        width: calc(1312 * var(--unit));
+        height: calc(56 * var(--unit));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .large-navbar-logo {
+        width: calc(40 * var(--unit));
+        height: calc(40 * var(--unit));
+        display: block;
+        background: url("../../assets/logo/icon.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    .large-navbar-button {
+        width: calc(104 * var(--unit));
+        height: calc(40 * var(--unit));
+        border: 0;
+        margin: auto 0 auto auto;
+        border-radius: calc(8 * var(--unit));
+        background: var(--accent);
+        color: var(--background);
+        cursor: pointer;
+
+        &.en {
+            font: 500 calc(16 * var(--unit)) "Satoshi";
+        }
+
+        &.th {
+            font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+}

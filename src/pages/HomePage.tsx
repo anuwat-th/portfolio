@@ -8,6 +8,7 @@ import "../styles/pages/HomePage.scss"
 import PrimaryIcon from "../components/PrimaryIcon";
 import Footer from "../components/Footer";
 import ChangeLanguage from "../components/ChangeLanguage";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
 
@@ -17,6 +18,7 @@ const HomePage = () => {
         <div className="home-page">
             <div className="home-page-container">
                 <ChangeLanguage/>
+                <Navbar/>
                 <div className="hero-section">
                     <div className="hero-wrapper">
                         <div className="hero-header-container">
