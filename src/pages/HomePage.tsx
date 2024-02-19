@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useSelector } from "react-redux";
 import { getText } from "../constants/pages/HomePageText";
 import { RootState } from "../redux/store/store";
@@ -6,7 +5,6 @@ import { RootState } from "../redux/store/store";
 import "../styles/global/Global.scss"
 import "../styles/pages/HomePage.scss"
 
-import PrimaryIcon from "../components/PrimaryIcon";
 import Footer from "../components/Footer";
 import ChangeLanguage from "../components/ChangeLanguage";
 import Navbar from "../components/Navbar";
