@@ -22,7 +22,7 @@
     }
 
     .change-language-container:hover {
-        background: var(--accent);
+        background: var(--primary);
         color: var(--b0);
     }
 
@@ -56,10 +56,10 @@
         z-index: 100;
         position: fixed;
         top: auto;
-        bottom: calc(48 * var(--unit));
+        bottom: calc(40 * var(--unit));
         left: auto;
-        right: calc(48 * var(--unit));
-        margin: 0;
+        right: calc(40 * var(--unit));
+        margin: 0 0 0 calc(368 * var(--unit));
 
         .change-language-container {
             width: calc(64 * var(--unit));
@@ -74,7 +74,7 @@
         }
 
         .change-language-container:hover {
-            background: var(--accent);
+            background: var(--primary);
             color: var(--b0);
         }
 

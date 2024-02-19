@@ -1,299 +1,89 @@
 .home-page {
 
-    .hero-wrapper {
-        width: calc(1312 * var(--unit));
-        height: calc(440 * var(--unit));
-        margin: 0 auto;
+    .hero-section {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(var(--primary), var(--primary-variant));
         display: flex;
         flex-direction: column;
     }
 
-    .hero-header-container {
-        width: calc(640 * var(--unit));
-        height: calc(96 * var(--unit));
-        margin: calc(112 * var(--unit)) 0 0 0;
+    .hero-vector{
+        width: calc(864 * var(--unit));
+        height: calc(656 * var(--unit));
+        background: url('../../assets/graphics/heroVector.svg') no-repeat center;
+        background-size: cover;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .hero-header-text {
-        width: calc(640 * var(--unit));
-        height: calc(96 * var(--unit));
-        display: flex;
-        align-items: center;
-        color: var(--b8);
+    .hero-title-container {
+        width: calc(1088 * var(--unit));
+        height: calc(192 * var(--unit));
+        margin: calc(160 * var(--unit)) auto 0 auto;
+        z-index: 1;
+    }
 
+    .hero-title-text {
+        text-align: center;
+        color: var(--b0);
         &.en {
-            font: 500 calc(64 * var(--unit)) "Satoshi";
+            font: 600 calc(64 * var(--unit)) "Satoshi";
         }
 
         &.th {
-            font: 500 calc(64 * var(--unit)) "IBM Plex Sans Thai";
+            font: 600 calc(64 * var(--unit)) "IBM Plex Sans Thai";
+            line-height: calc(88 * var(--unit));
         }
     }
 
     .hero-description-container {
-        width: calc(640 * var(--unit));
-        height: calc(56 * var(--unit));
-        margin: calc(8 * var(--unit)) 0 0 0;
+        width: calc(864 * var(--unit));
+        height: calc(80 * var(--unit));
+        margin:  0 auto;
+        z-index: 1;
     }
 
     .hero-description-text {
-        width: calc(640 * var(--unit));
-        height: calc(56 * var(--unit));
-        display: flex;
-        align-items: flex-start;
-        color: var(--b7);
-
+        text-align: center;
+        color: var(--b0);
         &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
+            font: 300 calc(20 * var(--unit)) "Satoshi";
         }
 
         &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+            font: 300 calc(20 * var(--unit)) "IBM Plex Sans Thai";
         }
     }
 
-    .hero-button-container {
-        width: calc(160 * var(--unit));
-        height: calc(56 * var(--unit));
-        margin: calc(24 * var(--unit)) 0 0 0;
+    .hero-button-container{
+        width: calc(200 * var(--unit));
+        height: calc(72 * var(--unit));
+        margin: calc(40 * var(--unit)) auto 0 auto;
+        z-index: 1;
     }
 
-    .hero-button {
-        width: calc(160 * var(--unit));
-        height: calc(56 * var(--unit));
-        border-radius: calc(16 * var(--unit));
-        border: 0;
-        background: var(--accent);
-        color: var(--background);
-        cursor: pointer;
-
-        &.en {
-            font: 500 calc(16 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .hero-graphic-container {
-        width: 100vw;
-        height: calc(592 * var(--unit));
-        background: var(--background);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: calc(256 * var(--unit));
-    }
-
-    .hero-graphic {
-        width: calc(528 * var(--unit));
-        height: calc(528 * var(--unit));
-    }
-
-    .hero-graphic[data-set="hero-graphic-1"] {
-        background: url("../../assets/graphics/hero-graphic-1.svg");
-    }
-
-    .hero-graphic[data-set="hero-graphic-2"] {
-        background: url("../../assets/graphics/hero-graphic-2.svg");
-    }
-
-    .profile-section {
-        width: 100vw;
-        height: calc(600 * var(--unit));
-    }
-
-    .profile-wrapper {
-        width: calc(1312 * var(--unit));
-        height: calc(600 * var(--unit));
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
-    .profile-bio-container {
-        width: calc(528 * var(--unit));
-        height: calc(600 * var(--unit));
-    }
-
-    .profile-bio-primary-container {
-        width: 100%;
-        height: calc(40 * var(--unit));
-        margin: calc(104 * var(--unit)) 0 0 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-bio-primary-text {
-        color: var(--b8);
-
-        &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .profile-bio-name-container {
-        width: 100%;
-        height: calc(48 * var(--unit));
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-bio-name-text {
-        color: var(--b8);
-
-        &.en {
-            font: 500 calc(36 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 500 calc(36 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .profile-skill-container {
-        width: calc(640 * var(--unit));
-        height: calc(600 * var(--unit));
-    }
-
-    .profile-bio-content-container {
-        width: 100%;
-        height: calc(104 * var(--unit));
-    }
-
-    .profile-bio-content-text-1 {
-        margin: calc(48 * var(--unit)) 0 0 0;
-        color: var(--b7);
-
-        &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .profile-bio-content-text-2 {
-        margin: calc(32 * var(--unit)) 0 0 0;
-        color: var(--b7);
-
-        &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .profile-skill-title-1-container {
-        width: 100%;
-        height: calc(48 * var(--unit));
-        margin: calc(104 * var(--unit)) 0 0 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-skill-title-2-container {
-        width: 100%;
-        height: calc(48 * var(--unit));
-        margin: calc(80 * var(--unit)) 0 0 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-skill-title-text {
-        color: var(--b8);
-
-        &.en {
-            font: 400 calc(20 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 400 calc(20 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .icon-component-container {
-        width: 100%;
-        height: calc(56 * var(--unit));
-        margin: calc(16 * var(--unit)) 0 0 0;
-        display: flex;
-        gap: calc(16 * var(--unit));
-    }
-
-    .contract-section {
-        width: 100vw;
-        height: calc(480 * var(--unit));
-    }
-
-    .contract-wrapper {
-        width: calc(1312 * var(--unit));
-        height: calc(480 * var(--unit));
-        margin: 0 auto;
-        border-top: calc(1 * var(--unit)) solid var(--b3);
-    }
-
-    .contract-header-container {
-        width: calc(484 * var(--unit));
-        height: calc(64 * var(--unit));
-        margin: calc(128 * var(--unit)) auto 0 auto;
+    .hero-button{
+        width: calc(200 * var(--unit));
+        height: calc(72 * var(--unit));
+        border-radius: calc(20 * var(--unit));
         display: grid;
         place-content: center;
+        background: rgba(128, 219, 255, 0.56);
+        text-decoration: none;
     }
 
-    .contract-header-text {
-        color: var(--b8);
-
-        &.en {
-            font: 500 calc(36 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 500 calc(36 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .contract-description-container {
-        width: calc(484 * var(--unit));
+    .hero-button-text{
+        width: calc(192 * var(--unit));
         height: calc(64 * var(--unit));
-        margin: calc(24 * var(--unit)) auto 0 auto;
-    }
-
-    .contract-description-text {
-        color: var(--b7);
-        text-align: center;
-
-        &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
-        }
-
-        &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
-        }
-    }
-
-    .contract-button-container {
-        width: calc(160 * var(--unit));
-        height: calc(56 * var(--unit));
-        margin: calc(16 * var(--unit)) auto 0 auto;
-    }
-
-    .contract-button {
-        width: calc(160 * var(--unit));
-        height: calc(56 * var(--unit));
         border-radius: calc(16 * var(--unit));
-        border: 0;
-        background: var(--accent);
-        color: var(--background);
-        cursor: pointer;
-
+        display: grid;
+        place-content: center;
+        background: var(--b0);
+        color: var(--primary);
         &.en {
             font: 500 calc(16 * var(--unit)) "Satoshi";
         }
@@ -302,317 +92,99 @@
             font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
         }
     }
-}
-@media (max-width:512px) and (orientation: portrait) {
-    .home-page {
 
-        .hero-wrapper {
-            width: calc(432 * var(--unit));
-            height:auto;
-            padding: 0 0 calc(40 * var(--unit)) 0;
-            margin: 0 auto;
+    @media (max-width:512px) and (orientation: portrait) {
+        .hero-section {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(var(--primary), var(--primary-variant));
             display: flex;
             flex-direction: column;
         }
     
-        .hero-header-container {
-            width: calc(432 * var(--unit));
-            height: calc(248 * var(--unit));
-            margin: calc(96 * var(--unit)) 0 0 0;
+        .hero-vector{
+            width: calc(512 * var(--unit));
+            height: calc(656 * var(--unit));
+            background: url('../../assets/graphics/heroVector.svg') no-repeat center;
+            background-size: cover;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
         }
     
-        .hero-header-text {
+        .hero-title-container {
             width: calc(432 * var(--unit));
-            height: calc(248 * var(--unit));
-            display: flex;
-            align-items: center;
-            color: var(--b8);
-    padding: 0 calc(48 * var(--unit)) 0 0 ;
+            height: auto;
+            margin: calc(160 * var(--unit)) auto 0 auto;
+            z-index: 1;
+        }
+    
+        .hero-title-text {
+            text-align: start;
+            color: var(--b0);
             &.en {
-                font: 500 calc(96 * var(--unit)) "Satoshi";
+                font: 600 calc(56 * var(--unit)) "Satoshi";
             }
     
             &.th {
-                font: 500 calc(96 * var(--unit)) "IBM Plex Sans Thai";
+                font: 600 calc(56 * var(--unit)) "IBM Plex Sans Thai";
+                line-height: auto;
             }
         }
     
         .hero-description-container {
             width: calc(432 * var(--unit));
-            height:auto;
-            margin: calc(32 * var(--unit)) 0 0 0;
+            height: auto;
+            margin:  calc(32 * var(--unit)) auto 0 auto;
+            z-index: 1;
         }
     
         .hero-description-text {
-            width: calc(432 * var(--unit));
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            color: var(--b7);
-    
+            text-align: start;
+            color: var(--b0);
             &.en {
-                font: 400 calc(24 * var(--unit)) "Satoshi";
+                font: 300 calc(20 * var(--unit)) "Satoshi";
             }
     
             &.th {
-                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
+                font: 300 calc(20 * var(--unit)) "IBM Plex Sans Thai";
             }
         }
     
-        .hero-button-container {
+        .hero-button-container{
             width: calc(432 * var(--unit));
-            height: calc(80 * var(--unit));
-            margin: calc(40 * var(--unit)) 0 0 0;
+            height: calc(72 * var(--unit));
+            margin: calc(32 * var(--unit)) auto 0 auto;
+            z-index: 1;
         }
     
-        .hero-button {
-            width: calc(432 * var(--unit));
-            height: calc(80 * var(--unit));
-            border-radius: calc(24 * var(--unit));
-            border: 0;
-            background: var(--accent);
-            color: var(--background);
-            cursor: pointer;
-    
-            &.en {
-                font: 500 calc(24 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 500 calc(24 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .hero-graphic-container {
-            width: 100vw;
-            height: calc(952 * var(--unit));
-            background: var(--background);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: calc(40 * var(--unit));
-        }
-    
-        .hero-graphic {
-            width: calc(416 * var(--unit));
-            height: calc(416 * var(--unit));
-        }
-    
-        .hero-graphic[data-set="hero-graphic-1"] {
-            background: url("../../assets/graphics/hero-graphic-1.svg") no-repeat center;
-        }
-    
-        .hero-graphic[data-set="hero-graphic-2"] {
-            background: url("../../assets/graphics/hero-graphic-2.svg") no-repeat center;
-        }
-    
-        .profile-section {
-            width: 100vw;
-            height: auto;
-        }
-    
-        .profile-wrapper {
-            width: calc(432 * var(--unit));
-            height: auto;
-            padding: calc(88 * var(--unit)) 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 0 auto;
-        }
-    
-        .profile-bio-container {
-            width: calc(432 * var(--unit));
-            height: auto;
-        }
-    
-        .profile-bio-primary-container {
-            width: calc(432 * var(--unit));
-            height: calc(40 * var(--unit));
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-    
-        .profile-bio-primary-text {
-            color: var(--b8);
-    
-            &.en {
-                font: 400 calc(24 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .profile-bio-name-container {
-            width: calc(432 * var(--unit));
-            height: calc(160 * var(--unit));
-            display: flex;
-            align-items: center;
-        }
-    
-        .profile-bio-name-text {
-            color: var(--b8);
-    
-            &.en {
-                font: 500 calc(56 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 500 calc(56 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .profile-skill-container {
-            width: calc(432 * var(--unit));
-            height: auto;
-        }
-    
-        .profile-bio-content-container {
-            width: calc(432 * var(--unit));
-            height: auto;
-        }
-    
-        .profile-bio-content-text-1 {
-            margin: calc(32 * var(--unit)) 0 0 0;
-            color: var(--b7);
-    
-            &.en {
-                font: 400 calc(24 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .profile-bio-content-text-2 {
-            margin: calc(32 * var(--unit)) 0 0 0;
-            color: var(--b7);
-    
-            &.en {
-                font: 400 calc(24 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .profile-skill-title-1-container {
-            width:  calc(432 * var(--unit));
-            height: calc(48 * var(--unit));
-            margin: calc(104 * var(--unit)) 0 0 0;
-            display: flex;
-            align-items: center;
-        }
-    
-        .profile-skill-title-2-container {
-            width: calc(432 * var(--unit));
-            height: calc(48 * var(--unit));
-            margin: calc(88 * var(--unit)) 0 0 0;
-            display: flex;
-            align-items: center;
-        }
-    
-        .profile-skill-title-text {
-            color: var(--b8);
-    
-            &.en {
-                font: 400 calc(32 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 400 calc(32 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .icon-component-container {
-            width: calc(432 * var(--unit));
-            height: auto;
-            margin: calc(24 * var(--unit)) 0 0 0;
-            display: grid;
-            gap: calc(16 * var(--unit));
-            grid-template-columns: calc(96 * var(--unit)) calc(96 * var(--unit)) calc(96 * var(--unit));
-            align-items: flex-start;
-        }
-    
-        .contract-section {
-            width: 100vw;
-            height: auto;
-        }
-    
-        .contract-wrapper {
-            width: calc(432 * var(--unit));
-            height: auto;
-            margin: 0 auto;
-            border-top: calc(1 * var(--unit)) solid var(--b3);
-            padding: calc(88 * var(--unit)) 0;
-        }
-    
-        .contract-header-container {
-            width: calc(432 * var(--unit));
-            height: calc(56 * var(--unit));
-            margin: 0;
+        .hero-button{
+            width: calc(200 * var(--unit));
+            height: calc(72 * var(--unit));
+            border-radius: calc(20 * var(--unit));
             display: grid;
             place-content: center;
+            background: rgba(128, 219, 255, 0.56);
+            text-decoration: none;
         }
     
-        .contract-header-text {
-            color: var(--b8);
-    
-            &.en {
-                font: 500 calc(56 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 500 calc(56 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .contract-description-container {
-            width: calc(432 * var(--unit));
-            height: auto;
-            margin: calc(24 * var(--unit)) auto 0 auto;
-        }
-    
-        .contract-description-text {
-            color: var(--b7);
-            text-align: center;
-    
-            &.en {
-                font: 400 calc(24 * var(--unit)) "Satoshi";
-            }
-    
-            &.th {
-                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
-            }
-        }
-    
-        .contract-button-container {
-            width: calc(208 * var(--unit));
+        .hero-button-text{
+            width: calc(192 * var(--unit));
             height: calc(64 * var(--unit));
-            margin: calc(48 * var(--unit)) auto 0 auto;
-        }
-    
-        .contract-button {
-            width: calc(208 * var(--unit));
-            height: calc(64 * var(--unit));
-            border-radius: calc(20 * var(--unit));
-            border: 0;
-            background: var(--accent);
-            color: var(--background);
-            cursor: pointer;
-    
+            border-radius: calc(16 * var(--unit));
+            display: grid;
+            place-content: center;
+            background: var(--b0);
+            color: var(--primary);
             &.en {
-                font: 500 calc(20 * var(--unit)) "Satoshi";
+                font: 500 calc(16 * var(--unit)) "Satoshi";
             }
     
             &.th {
-                font: 500 calc(20 * var(--unit)) "IBM Plex Sans Thai";
+                font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
             }
         }
     }

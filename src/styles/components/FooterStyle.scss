@@ -19,11 +19,11 @@
         text-align: center;
 
         &.en {
-            font: 400 calc(16 * var(--unit)) "Satoshi";
+            font: 300 calc(16 * var(--unit)) "Poppins";
         }
 
         &.th {
-            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
         }
     }
 
@@ -69,7 +69,7 @@
         .footer-text-container {
             width: calc(432 * var(--unit));
             height: calc(32 * var(--unit));
-            margin: calc(24 * var(--unit)) auto 0 auto;
+            margin: calc(32 * var(--unit)) auto 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,25 +80,25 @@
             text-align: center;
     
             &.en {
-                font: 400 calc(16 * var(--unit)) "Satoshi";
+                font: 300 calc(16 * var(--unit)) "Poppins";
             }
     
             &.th {
-                font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+                font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
             }
         }
     
         .footer-link-container {
-            width: calc(208 * var(--unit));
-            height: calc(48 * var(--unit));
+            width: calc(160 * var(--unit));
+            height: calc(32 * var(--unit));
             margin: calc(32 * var(--unit)) auto 0 auto;
             display: flex;
             justify-content: space-between;
         }
     
         .footer-link-icon {
-            width: calc(48 * var(--unit));
-            height: calc(48 * var(--unit));
+            width: calc(32 * var(--unit));
+            height: calc(32 * var(--unit));
             border: 0;
             cursor: pointer;
     

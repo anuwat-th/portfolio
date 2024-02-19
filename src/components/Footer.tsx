@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../redux/store/store";
 import { getText } from "../constants/components/FooterText";
 
-import "../styles/global/global.scss"
+import "../styles/global/Global.scss"
 import "../styles/components/FooterStyle.scss"
 
 

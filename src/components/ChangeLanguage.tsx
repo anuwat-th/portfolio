@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setLanguage } from "../redux/reducers/languageReducer";
 import { RootState } from "../redux/store/store";
 
-import "../styles/global/global.scss"
+import "../styles/global/Global.scss"
 import "../styles/components/ChangeLanguageStyle.scss"
 
 const ChangeLanguage = () => {

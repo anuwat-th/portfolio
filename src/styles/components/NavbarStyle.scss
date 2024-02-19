@@ -4,44 +4,194 @@
     left: 0;
     z-index: 200;
 
+    .small-navbar {
+        display: none;
+    }
+
     .large-navbar {
         width: 100vw;
-        height: calc(56 * var(--unit));
-        background: var(--b0);
+        height: calc(64 * var(--unit));
+
+        &.black-theme {
+            background: var(--b0);
+        }
+
+        &.white-theme {
+            background: none;
+        }
     }
 
     .large-navbar-wrapper {
         width: calc(1312 * var(--unit));
-        height: calc(56 * var(--unit));
+        height: calc(64 * var(--unit));
         margin: 0 auto;
         display: flex;
         align-items: center;
+        gap: calc(48 * var(--unit));
     }
 
     .large-navbar-logo {
         width: calc(40 * var(--unit));
         height: calc(40 * var(--unit));
         display: block;
-        background: url("../../assets/logo/icon.svg") no-repeat center;
-        background-size: cover;
+
+        &.black-theme {
+            background: url("../../assets/logo/iconBlack.svg") no-repeat center;
+            background-size: cover;
+        }
+
+        &.white-theme {
+            background: url("../../assets/logo/iconWhite.svg") no-repeat center;
+            background-size: cover;
+        }
     }
 
-    .large-navbar-button {
-        width: calc(104 * var(--unit));
-        height: calc(40 * var(--unit));
-        border: 0;
-        margin: auto 0 auto auto;
-        border-radius: calc(8 * var(--unit));
-        background: var(--accent);
-        color: var(--background);
-        cursor: pointer;
+    .large-navbar-link {
+        text-decoration: none;
 
         &.en {
-            font: 500 calc(16 * var(--unit)) "Satoshi";
+            font: 400 calc(16 * var(--unit)) "Poppins";
         }
 
         &.th {
-            font: 500 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+
+        &.black-theme {
+            color: var(--b8);
+        }
+
+        &.white-theme {
+            color: var(--b0);
         }
     }
+
+    @media (max-width:512px) and (orientation: portrait) {
+        .large-navbar {
+            display: none;
+        }
+
+        .small-navbar {
+            display: block;
+            width: 100vw;
+            height: calc(80 * var(--unit));
+            background: var(--b0);
+
+            &.black-theme {
+                background: var(--b0);
+            }
+
+            &.white-theme {
+                background: none;
+            }
+        }
+
+        .small-navbar-wrapper {
+            width: calc(432 * var(--unit));
+            height: calc(80 * var(--unit));
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .small-navbar-logo {
+            width: calc(48 * var(--unit));
+            height: calc(48 * var(--unit));
+            display: block;
+
+            &.black-theme {
+                background: url("../../assets/logo/iconBlack.svg") no-repeat center;
+                background-size: cover;
+            }
+
+            &.white-theme {
+                background: url("../../assets/logo/iconWhite.svg") no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        .small-navbar-menu-button {
+            width: calc(48 * var(--unit));
+            height: calc(48 * var(--unit));
+            display: grid;
+            place-content: center;
+            border: 0;
+            background: none;
+            font-size: calc(48 * var(--unit));
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 200,
+                'GRAD' 0,
+                'opsz' 24;
+
+            &.black-theme {
+                color: var(--b8);
+            }
+
+            &.white-theme {
+                color: var(--b0);
+            }
+        }
+
+        .small-menu-container {
+            width: 100vw;
+            height: 100vh;
+            background: var(--b0);
+            position: fixed;
+            left: 0;
+            z-index: 300;
+            top: -100vh;
+
+            &.open {
+                top: 0;
+                transition: top 0.5s ease;
+            }
+
+            &.close {
+                top: -100vh;
+                transition: top 0.5s ease;
+            }
+        }
+
+
+        .small-menu-close-button {
+            width: calc(48 * var(--unit));
+            height: calc(48 * var(--unit));
+            display: grid;
+            place-content: center;
+            border: 0;
+            background: none;
+            margin: calc(40 * var(--unit)) calc(40 * var(--unit)) 0 auto;
+            font-size: calc(48 * var(--unit));
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 200,
+                'GRAD' 0,
+                'opsz' 24;
+        }
+
+        .small-menu-link-container {
+            width: calc(432 * var(--unit));
+            height: auto;
+            margin: calc(32 * var(--unit)) auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: calc(32 * var(--unit));
+        }
+
+        .small-navbar-link {
+            text-decoration: none;
+            color: var(--b8);
+
+            &.en {
+                font: 500 calc(40 * var(--unit)) "Poppins";
+            }
+
+            &.th {
+                font: 500 calc(40 * var(--unit)) "IBM Plex Sans Thai";
+            }
+        }
+    }
+
 }

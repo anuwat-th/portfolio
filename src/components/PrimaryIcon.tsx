@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/global/global.scss";
+import "../styles/global/Global.scss";
 import "../styles/components/PrimaryIconStyle.scss";
 
 interface PrimaryIconProp {
