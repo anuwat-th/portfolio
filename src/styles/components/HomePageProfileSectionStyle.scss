@@ -1,0 +1,219 @@
+.profile-section {
+    width: 100vw;
+    height: calc(1008 * var(--unit));
+    display: flex;
+
+    .profile-section-wrapper {
+        width: calc(1088 * var(--unit));
+        height: calc(1008 * var(--unit));
+        margin: 0 auto;
+    }
+
+    .profile-image {
+        width: calc(200 * var(--unit));
+        height: calc(200 * var(--unit));
+        position: absolute;
+        margin: calc(224 * var(--unit)) 0 0 calc(752 * var(--unit));
+        background: url('../../assets/images/profile-image.png') no-repeat center;
+        background-size: cover;
+    }
+
+    .intro-text {
+        width: calc(528 * var(--unit));
+        height: calc(144 * var(--unit));
+        margin: calc(152 * var(--unit)) 0 0 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: var(--primary-variant);
+
+        &.en {
+            font: 500 calc(48 * var(--unit)) "Poppins";
+        }
+
+        &.th {
+            font: 500 calc(48 * var(--unit)) "Prompt";
+        }
+    }
+
+    .content-container {
+        width: calc(528 * var(--unit));
+        height: calc(296 * var(--unit));
+        position: absolute;
+        margin: calc(312 * var(--unit)) 0 0 0;
+    }
+
+    .content-text {
+        display: block;
+        width: auto;
+        height: auto;
+        color: var(--primary-variant);
+
+        &.en {
+            font: 300 calc(16 * var(--unit)) "satoshi";
+            margin: 0 0 calc(24 * var(--unit)) 0;
+        }
+
+        &.th {
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+            margin: 0 0 calc(8 * var(--unit)) 0;
+        }
+    }
+
+    .skill-text {
+        width: calc(528 * var(--unit));
+        height: calc(72 * var(--unit));
+        margin: calc(648 * var(--unit)) 0 0 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: var(--primary);
+
+        &.en {
+            font: 500 calc(32 * var(--unit)) "Poppins";
+        }
+
+        &.th {
+            font: 500 calc(32 * var(--unit)) "Prompt";
+        }
+    }
+
+    .skill-box-container {
+        width: calc(640 * var(--unit));
+        height: calc(192 * var(--unit));
+        margin: calc(720 * var(--unit)) 0 0 0;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skill-box {
+        width: calc(192 * var(--unit));
+        height: calc(192 * var(--unit));
+    }
+
+    .skill-header {
+        color: var(--primary);
+        font: 500 calc(16 * var(--unit)) "satoshi";
+        line-height: calc(28 * var(--unit));
+        color: var(--primary);
+    }
+
+    .skill {
+        padding: 0 calc(16 * var(--unit));
+        font: 300 calc(16 * var(--unit)) "satoshi";
+        line-height: calc(28 * var(--unit));
+        color: var(--primary-variant);
+    }
+
+    @media (max-width:512px) and (orientation: portrait) {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        display: flex;
+
+        .profile-section-wrapper {
+            width: calc(432 * var(--unit));
+            height: calc(1824 * var(--unit));
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            width: calc(200 * var(--unit));
+            height: calc(200 * var(--unit));
+            position: absolute;
+            margin: calc(128 * var(--unit)) 0 0 calc(116 * var(--unit));
+            background: url('../../assets/images/profile-image.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .intro-text {
+            width: calc(432 * var(--unit));
+            height: calc(144 * var(--unit));
+            margin: calc(456 * var(--unit)) 0 0 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: var(--primary-variant);
+
+            &.en {
+                font: 500 calc(40 * var(--unit)) "Poppins";
+            }
+
+            &.th {
+                font: 500 calc(40 * var(--unit)) "Prompt";
+            }
+        }
+
+        .content-container {
+            width: calc(432 * var(--unit));
+            height: calc(688 * var(--unit));
+            position: absolute;
+            margin: calc(600 * var(--unit)) 0 0 0;
+        }
+
+        .content-text {
+            display: block;
+            width: auto;
+            height: auto;
+            color: var(--primary-variant);
+
+            &.en {
+                font: 300 calc(24 * var(--unit)) "satoshi";
+                margin: 0 0 calc(24 * var(--unit)) 0;
+            }
+
+            &.th {
+                font: 300 calc(22 * var(--unit)) "IBM Plex Sans Thai";
+                margin: 0 0 calc(8 * var(--unit)) 0;
+            }
+        }
+
+        .skill-text {
+            width: calc(432 * var(--unit));
+            height: calc(72 * var(--unit));
+            margin: calc(1312 * var(--unit)) 0 0 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+
+            &.en {
+                font: 500 calc(32 * var(--unit)) "Poppins";
+            }
+
+            &.th {
+                font: 500 calc(32 * var(--unit)) "Prompt";
+            }
+        }
+
+        .skill-box-container {
+            width: calc(416 * var(--unit));
+            height: calc(384 * var(--unit));
+            margin: calc(1392 * var(--unit)) 0 0 0;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            width: calc(192 * var(--unit));
+            height: calc(192 * var(--unit));
+        }
+
+        .skill-header {
+            color: var(--primary);
+            font: 500 calc(18 * var(--unit)) "satoshi";
+            line-height: calc(28 * var(--unit));
+            color: var(--primary);
+        }
+
+        .skill {
+            padding: 0 calc(16 * var(--unit));
+            font: 300 calc(16 * var(--unit)) "satoshi";
+            line-height: calc(28 * var(--unit));
+            color: var(--primary-variant);
+        }
+    }
+}

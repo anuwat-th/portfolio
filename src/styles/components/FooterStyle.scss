@@ -1,7 +1,7 @@
 .footer {
     width: 100vw;
     height: calc(128 * var(--unit));
-    background: var(--b2);
+    background: var(--primary);
     display: flex;
     flex-direction: column;
 
@@ -15,9 +15,8 @@
     }
 
     .footer-text {
-        color: var(--b7);
         text-align: center;
-
+color: var(--b0);
         &.en {
             font: 300 calc(16 * var(--unit)) "Poppins";
         }
@@ -62,7 +61,7 @@
     .footer {
         width: 100vw;
         height: calc(176 * var(--unit));
-        background: var(--b2);
+        background: var(--primary);
         display: flex;
         flex-direction: column;
     
@@ -76,7 +75,7 @@
         }
     
         .footer-text {
-            color: var(--b7);
+            color: var(--b0);
             text-align: center;
     
             &.en {

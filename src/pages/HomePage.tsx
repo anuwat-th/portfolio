@@ -3,12 +3,14 @@ import { getText } from "../constants/pages/HomePageText";
 import { RootState } from "../redux/store/store";
 
 import "../styles/global/Global.scss"
-import "../styles/pages/HomePage.scss"
+// import "../styles/pages/HomePage.scss"
 
 import Footer from "../components/Footer";
 import ChangeLanguage from "../components/ChangeLanguage";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import HomePageHeroSection from "../components/HomePageHeroSection";
+import HomePageProfileSection from "../components/HomePageProfileSection";
 
 const HomePage = () => {
 
@@ -19,7 +21,9 @@ const HomePage = () => {
             <div className="home-page-container">
                 <Navbar />
                 <ChangeLanguage />
-                <div className="hero-section">
+                <HomePageHeroSection/>
+                <HomePageProfileSection/>
+                {/* <div className="hero-section">
                     <div className="hero-title-container">
                         <h1 className={`hero-title-text ${language}`}>{getText('heroTitle1Text')}</h1>
                         <h1 className={`hero-title-text ${language}`}>{getText('heroTitle2Text')}</h1>
@@ -32,7 +36,7 @@ const HomePage = () => {
                     <div className="hero-button-container">
                         <Link className="hero-button" to={'/'}><p className={`hero-button-text ${language}`}>{getText('heroButton')}</p></Link>
                     </div>
-                </div>
+                </div> */}
                 <Footer/>
             </div>
         </div>

@@ -1,0 +1,171 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+
+    .intro-text {
+        width: calc(976 * var(--unit));
+        height: calc(56 * var(--unit));
+        margin: calc(120 * var(--unit)) auto 0 auto;
+        display: flex;
+        align-items: center;
+        color: var(--primary-variant);
+
+        &.en {
+            font: 300 calc(16 * var(--unit)) "Poppins";
+        }
+
+        &.th {
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .my-name-text {
+        width: calc(976 * var(--unit));
+        height: calc(80 * var(--unit));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        color: var(--primary);
+
+        &.en {
+            font: 500 calc(64 * var(--unit)) "Poppins";
+        }
+
+        &.th {
+            font: 500 calc(64 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .description-text {
+        width: calc(976 * var(--unit));
+        height: calc(56 * var(--unit));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        color: var(--primary-variant);
+
+        &.en {
+            font: 300 calc(16 * var(--unit)) "Poppins";
+        }
+
+        &.th {
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+        }
+    }
+
+    .hero-line {
+        width: calc(976 * var(--unit));
+        height: calc(0.8 * var(--unit));
+        margin: calc(24 * var(--unit)) auto 0 auto;
+        border: 0;
+        background:var(--primary-variant);
+    }
+
+    .hero-graphic-container {
+        width: 100vw;
+        height: calc(608 * var(--unit));
+        margin: calc(48 * var(--unit)) 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(128 * var(--unit));
+        background: var(--primary);
+    }
+
+    .hero-graphic {
+        width: calc(480 * var(--unit));
+        height: calc(480 * var(--unit));
+        background: url('../../assets/graphics/hero-graphic-1.svg') no-repeat center;
+        background-size: cover;
+    }
+    .hero-graphic:last-child{
+        background: url('../../assets/graphics/hero-graphic-2.svg') no-repeat center;
+        background-size: cover;
+
+    }
+    @media (max-width:512px) and (orientation: portrait) {
+        .intro-text {
+            width: calc(432 * var(--unit));
+            height: calc(48 * var(--unit));
+            margin: calc(144 * var(--unit)) auto 0 auto;
+            display: flex;
+            align-items: center;
+            color: var(--primary-variant);
+    
+            &.en {
+                font: 300 calc(24 * var(--unit)) "Poppins";
+            }
+    
+            &.th {
+                font: 300 calc(24 * var(--unit)) "IBM Plex Sans Thai";
+            }
+        }
+    
+        .my-name-text {
+            width: calc(432 * var(--unit));
+            height: calc(160 * var(--unit));
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            border: 0;
+    
+            &.en {
+                font: 500 calc(56 * var(--unit)) "Poppins";
+            }
+    
+            &.th {
+                font: 500 calc(56 * var(--unit)) "IBM Plex Sans Thai";
+            }
+        }
+    
+        .description-text {
+            width: calc(432 * var(--unit));
+            height: calc(88 * var(--unit));
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            color: var(--primary-variant);
+    
+            &.en {
+                font: 300 calc(20 * var(--unit)) "Poppins";
+            }
+    
+            &.th {
+                font: 300 calc(20 * var(--unit)) "IBM Plex Sans Thai";
+            }
+        }
+    
+        .hero-line {
+            width: calc(432 * var(--unit));
+            height: calc(0.8 * var(--unit));
+            margin: calc(8 * var(--unit)) auto 0 auto;
+            border: 0;
+            background:var(--primary-variant);
+        }
+    
+        .hero-graphic-container {
+            width: 100vw;
+            height: calc(608 * var(--unit));
+            margin: calc(48 * var(--unit)) 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: calc(128 * var(--unit));
+            background: var(--primary);
+            overflow: hidden;
+        }
+    
+        .hero-graphic {
+            width: calc(480 * var(--unit));
+            height: calc(480 * var(--unit));
+            background: url('../../assets/graphics/hero-graphic-1.svg') no-repeat right;
+            background-size: cover;
+        }
+        .hero-graphic:last-child{
+            background: url('../../assets/graphics/hero-graphic-2.svg') no-repeat left;
+            background-size: cover;
+    
+        }
+    }
+}
