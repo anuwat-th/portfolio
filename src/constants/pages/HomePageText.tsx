@@ -4,7 +4,7 @@ import { RootState } from '../../redux/store/store';
 export const translations = {
     heroTitle1Text: {
         en: `I’m a Junior Frontend Developer`,
-        th: `ผมคือนักพัฒนา Frontend และ`,
+        th: `ผมเป็นนักพัฒนา Frontend และ`,
     },
     heroTitle2Text: {
         en: `and UX/UI Designer`,
