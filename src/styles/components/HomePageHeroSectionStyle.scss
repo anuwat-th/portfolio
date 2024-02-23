@@ -3,7 +3,7 @@
     flex-direction: column;
 
     .intro-text {
-        width: calc(976 * var(--unit));
+        width: calc(1088 * var(--unit));
         height: calc(56 * var(--unit));
         margin: calc(120 * var(--unit)) auto 0 auto;
         display: flex;
@@ -20,7 +20,7 @@
     }
 
     .my-name-text {
-        width: calc(976 * var(--unit));
+        width: calc(1088 * var(--unit));
         height: calc(80 * var(--unit));
         margin: 0 auto;
         display: flex;
@@ -37,7 +37,7 @@
     }
 
     .description-text {
-        width: calc(976 * var(--unit));
+        width: calc(1088 * var(--unit));
         height: calc(56 * var(--unit));
         margin: 0 auto;
         display: flex;
@@ -54,7 +54,7 @@
     }
 
     .hero-line {
-        width: calc(976 * var(--unit));
+        width: calc(1088 * var(--unit));
         height: calc(0.8 * var(--unit));
         margin: calc(24 * var(--unit)) auto 0 auto;
         border: 0;
