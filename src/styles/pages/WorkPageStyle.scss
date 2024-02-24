@@ -1,0 +1,233 @@
+.work-page {
+
+    .work-page-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+
+    .title-text {
+
+        width: calc(1088 * var(--unit));
+
+        height: calc(80 * var(--unit));
+
+        margin: calc(120 * var(--unit)) auto 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--primary);
+
+
+
+        &.en {
+
+            font: 500 calc(64 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 500 calc(64 * var(--unit)) "Prompt";
+
+        }
+
+    }
+
+
+
+    .title-line {
+
+        width: calc(1088 * var(--unit));
+
+        height: calc(0.8 * var(--unit));
+
+        margin: calc(16 * var(--unit)) auto 0 auto;
+
+        border: 0;
+
+        background: var(--primary-variant);
+
+    }
+
+
+
+
+
+    .description-text {
+
+        width: calc(1088 * var(--unit));
+
+        height: calc(32 * var(--unit));
+
+        margin: calc(24 * var(--unit)) auto 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--primary);
+
+
+
+        &.en {
+
+            font: italic 300 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: italic 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+        }
+
+    }
+
+
+
+    .work-section {
+
+        width: calc(1088 * var(--unit));
+
+        height: auto;
+
+        margin: calc(128 * var(--unit)) auto calc(152 * var(--unit)) auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: calc(208 * var(--unit));
+
+    }
+
+
+
+    @media (max-width:512px) and (orientation: portrait) {
+
+        .work-page-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+
+
+        .title-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(80 * var(--unit));
+
+            margin: calc(120 * var(--unit)) auto 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary);
+
+
+
+            &.en {
+
+                font: 500 calc(64 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 500 calc(64 * var(--unit)) "Prompt";
+
+            }
+
+        }
+
+
+
+        .title-line {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(0.8 * var(--unit));
+
+            margin: calc(16 * var(--unit)) auto 0 auto;
+
+            border: 0;
+
+            background: var(--primary-variant);
+
+        }
+
+
+
+
+
+        .description-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(32 * var(--unit));
+
+            margin: calc(40 * var(--unit)) auto 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary);
+
+
+
+            &.en {
+
+                font: italic 300 calc(16 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: italic 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+            }
+
+        }
+
+
+
+        .work-section {
+
+            width: calc(432 * var(--unit));
+
+            height: auto;
+
+            margin: calc(40 * var(--unit)) auto calc(108 * var(--unit)) auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: calc(108 * var(--unit));
+
+        }
+
+    }
+
+}

@@ -1,0 +1,285 @@
+.work-card {
+
+    .work-card-container {
+
+        width: calc(1088 * var(--unit));
+
+        height: calc(328 * var(--unit));
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+
+    .work-image {
+
+        width: calc(528 * var(--unit));
+
+        height: calc(328 * var(--unit));
+
+        position: absolute;
+
+        margin: 0;
+
+        border-radius: calc(8 * var(--unit));
+
+        border: calc(1 * var(--unit)) solid var(--b4);
+
+    }
+
+
+
+    .work-titlet-text {
+
+        width: calc(528 * var(--unit));
+
+        height: calc(56 * var(--unit));
+
+        margin: 0 0 0 calc(560 * var(--unit));
+
+        position: absolute;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--primary);
+
+
+
+        &.en {
+
+            font: 500 calc(48 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 500 calc(48 * var(--unit)) "Poppins";
+
+
+
+        }
+
+    }
+
+
+
+    .work-description-text {
+
+        width: calc(528 * var(--unit));
+
+        height: calc(56 * var(--unit));
+
+        margin: calc(72 * var(--unit)) 0 0 calc(560 * var(--unit));
+
+        position: absolute;
+
+        color: var(--primary-variant);
+
+
+
+        &.en {
+
+            font: 300 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+        }
+
+    }
+
+
+
+    .work-detail-text {
+
+        width: calc(192 * var(--unit));
+
+        height: calc(32 * var(--unit));
+
+        margin: calc(296 * var(--unit)) 0 0 calc(560 * var(--unit));
+
+        position: absolute;
+
+        color: var(--primary-variant);
+
+
+
+        &.en {
+
+            font: 400 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+        }
+
+    }
+
+
+
+    @media (max-width:512px) and (orientation: portrait) {
+
+        .work-card-container {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(544 * var(--unit));
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+
+
+        .work-image {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(268 * var(--unit));
+
+            position: absolute;
+
+            margin: 0;
+
+            border-radius: calc(8 * var(--unit));
+
+            border: calc(1 * var(--unit)) solid var(--b4);
+
+        }
+
+
+
+        .work-titlet-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(56 * var(--unit));
+
+            margin: calc(288 * var(--unit)) 0 0 0;
+
+            position: absolute;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary);
+
+
+
+            &.en {
+
+                font: 500 calc(48 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 500 calc(48 * var(--unit)) "Poppins";
+
+
+
+            }
+
+        }
+
+
+
+        .work-description-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(128 * var(--unit));
+
+            margin: calc(360 * var(--unit)) 0 0 0;
+
+            position: absolute;
+
+            color: var(--primary-variant);
+
+
+
+            &.en {
+
+                font: 300 calc(22 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 300 calc(22 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+            }
+
+        }
+
+
+
+        .work-detail-text {
+
+            width: calc(208 * var(--unit));
+
+            height: calc(64 * var(--unit));
+
+            margin: calc(496 * var(--unit)) 0 0 0;
+
+            position: absolute;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary-variant);
+
+
+
+            &.en {
+
+                font: 400 calc(24 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 400 calc(24 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+            }
+
+        }
+
+    }
+
+}

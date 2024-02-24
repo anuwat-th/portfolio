@@ -1,0 +1,45 @@
+.contract-page {
+
+
+
+    .contract-page-container {
+
+        width: 100vw;
+
+        height: 100vh;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+
+
+    .coming-soon-text {
+
+        color: var(--b4);
+
+
+
+        &.en {
+
+            font: 400 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 400 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+        }
+
+    }
+
+
+
+}

@@ -30,6 +30,7 @@ const Navbar = () => {
         };
         window.addEventListener('resize', handleResize);
         return () => {
+            document.body.style.overflow = 'auto';
             window.removeEventListener('resize', handleResize);
         };
     }, []);
@@ -38,10 +39,10 @@ const Navbar = () => {
             <div className={`large-navbar`}>
                 <div className='large-navbar-wrapper'>
                     <Link to={"/"} className={`large-navbar-logo `}></Link>
-                    <Link to={"/"} className={`large-navbar-link ${language}`}>{getText('aboutLink')}</Link>
-                    <Link to={"/"} className={`large-navbar-link  ${language}`}>{getText('workLink')}</Link>
-                    <Link to={"/"} className={`large-navbar-link  ${language}`}>{getText('blogLink')}</Link>
-                    <Link to={"/"} className={`large-navbar-link  ${language}`}>{getText('contractLink')}</Link>
+                    <Link to={"/about"} className={`large-navbar-link ${language}`}>{getText('aboutLink')}</Link>
+                    <Link to={"/work"} className={`large-navbar-link  ${language}`}>{getText('workLink')}</Link>
+                    <Link to={"/blog"} className={`large-navbar-link  ${language}`}>{getText('blogLink')}</Link>
+                    <Link to={"/contract"} className={`large-navbar-link  ${language}`}>{getText('contractLink')}</Link>
                 </div>
             </div>
             <div className={`small-navbar`}>
@@ -52,10 +53,10 @@ const Navbar = () => {
                 <div className={`small-menu-container ${sideBarMenu()}`}>
                     <button onClick={toggleSidebar} className={`small-menu-close-button material-symbols-rounded`}>close</button>
                     <div className="small-menu-link-container">
-                        <Link to={"/"} className={`small-navbar-link ${language}`}>{getText('aboutLink')}</Link>
-                        <Link to={"/"} className={`small-navbar-link ${language}`}>{getText('workLink')}</Link>
-                        <Link to={"/"} className={`small-navbar-link ${language}`}>{getText('blogLink')}</Link>
-                        <Link to={"/"} className={`small-navbar-link ${language}`}>{getText('contractLink')}</Link>
+                        <Link to={"/about"} className={`small-navbar-link ${language}`}>{getText('aboutLink')}</Link>
+                        <Link to={"/work"} className={`small-navbar-link ${language}`}>{getText('workLink')}</Link>
+                        <Link to={"/blog"} className={`small-navbar-link ${language}`}>{getText('blogLink')}</Link>
+                        <Link to={"/contract"} className={`small-navbar-link ${language}`}>{getText('contractLink')}</Link>
                     </div>
                 </div>
             </div>

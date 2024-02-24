@@ -1,9 +1,6 @@
-// import { useSelector } from "react-redux";
-// import { getText } from "../constants/pages/HomePageText";
-// import { RootState } from "../redux/store/store";
+
 
 import "../styles/global/Global.scss"
-// import "../styles/pages/HomePage.scss"
 
 import Footer from "../components/Footer";
 import ChangeLanguage from "../components/ChangeLanguage";
@@ -13,7 +10,6 @@ import HomePageProfileSection from "../components/HomePageProfileSection";
 
 const HomePage = () => {
 
-    // const language = useSelector((state: RootState) => state.language.language);
 
     return (
         <div className="home-page">

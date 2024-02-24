@@ -1,0 +1,557 @@
+.ryuzu-work-page {
+
+    .ryuzu-work-page-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        height: auto;
+
+        min-height: 100vh;
+
+    }
+
+
+
+    .hint-text {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(40 * var(--unit));
+
+        margin: calc(136 * var(--unit)) auto 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--primary-variant);
+
+
+
+        &.en {
+
+            font: 500 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 500 calc(16 * var(--unit)) "Prompt";
+
+
+
+        }
+
+    }
+
+
+
+    .title-text {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(80 * var(--unit));
+
+        margin: 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--primary);
+
+        font: 500 calc(64 * var(--unit)) "Poppins";
+
+
+
+    }
+
+
+
+    .sub-title-text {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(32 * var(--unit));
+
+        margin: calc(8 * var(--unit)) auto 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--b8);
+
+
+
+        &.en {
+
+            font: 300 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        &.th {
+
+            font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+        }
+
+    }
+
+
+
+    .image-container {
+
+        width: calc(704 * var(--unit));
+
+        height: calc(424 * var(--unit));
+
+        margin: calc(40 * var(--unit)) auto 0 auto;
+
+        display: grid;
+
+        place-content: center;
+
+        background: var(--b2);
+
+    }
+
+
+
+    .image-container img {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(360 * var(--unit));
+
+        object-fit: cover;
+
+    }
+
+
+
+    .description-text {
+
+        width: calc(640 * var(--unit));
+
+        height: auto;
+
+        margin: calc(64 * var(--unit)) auto 0 auto;
+
+        color: var(--b8);
+
+
+
+        &.en {
+
+            font: 300 calc(20 * var(--unit)) "satoshi";
+
+        }
+
+
+
+        &.th {
+
+            font: 300 calc(20 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+        }
+
+    }
+
+
+
+    .video-container {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(360 * var(--unit));
+
+        margin: calc(112 * var(--unit)) auto 0 auto;
+
+        background: var(--b2);
+
+    }
+
+
+
+    .video-container video {
+
+        width: calc(640 * var(--unit));
+
+        height: calc(360 * var(--unit));
+
+    }
+
+
+
+    .button-section {
+
+        width: calc(480 * var(--unit));
+
+        height: calc(64 * var(--unit));
+
+        margin: calc(144 * var(--unit)) auto calc(80 * var(--unit)) auto;
+
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+
+
+    .button-container {
+
+        width: calc(224 * var(--unit));
+
+        height: calc(64 * var(--unit));
+
+        background: var(--primary);
+
+        border: 0;
+
+        border-radius: calc(32 * var(--unit));
+
+        display: flex;
+
+    }
+
+
+
+    .button-container img {
+
+        width: calc(32 * var(--unit));
+
+        height: calc(32 * var(--unit));
+
+        position: absolute;
+
+        margin: calc(16 * var(--unit)) 0 0 calc(32 * var(--unit));
+
+    }
+
+
+
+    .button-container p {
+
+        width: calc(110 * var(--unit));
+
+        height: calc(32 * var(--unit));
+
+        position: absolute;
+
+        margin: calc(16 * var(--unit)) 0 0 calc(82 * var(--unit));
+
+        display: flex;
+
+        align-items: center;
+
+        color: var(--b0);
+
+        cursor: pointer;
+
+        font: 400 calc(16 * var(--unit)) "Poppins";
+
+    }
+
+
+
+    .button-container:hover {
+
+        transition: 0.3s ease;
+
+        transform: scale(1.05);
+
+    }
+
+
+
+    @media (max-width:512px) and (orientation: portrait) {
+
+        .gotty-work-page-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            height: auto;
+
+            min-height: 100vh;
+
+        }
+
+
+
+        .hint-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(40 * var(--unit));
+
+            margin: calc(144 * var(--unit)) auto 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary-variant);
+
+
+
+            &.en {
+
+                font: 500 calc(16 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 500 calc(16 * var(--unit)) "Prompt";
+
+
+
+            }
+
+        }
+
+
+
+        .title-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(80 * var(--unit));
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--primary);
+
+            font: 500 calc(64 * var(--unit)) "Poppins";
+
+
+
+        }
+
+
+
+        .sub-title-text {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(64 * var(--unit));
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--b8);
+
+
+
+            &.en {
+
+                font: 300 calc(16 * var(--unit)) "Poppins";
+
+            }
+
+
+
+            &.th {
+
+                font: 300 calc(16 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+            }
+
+        }
+
+
+
+        .image-container {
+
+            width: calc(480 * var(--unit));
+
+            height: calc(291 * var(--unit));
+
+            margin: calc(32 * var(--unit)) auto 0 auto;
+
+            display: grid;
+
+            place-content: center;
+
+            background: var(--b2);
+
+        }
+
+
+
+        .image-container img {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(243 * var(--unit));
+
+        }
+
+
+
+        .description-text {
+
+            width: calc(432 * var(--unit));
+
+            height: auto;
+
+            margin: calc(64 * var(--unit)) auto 0 auto;
+
+            color: var(--b8);
+
+
+
+            &.en {
+
+                font: 300 calc(24 * var(--unit)) "satoshi";
+
+            }
+
+
+
+            &.th {
+
+                font: 300 calc(24 * var(--unit)) "IBM Plex Sans Thai";
+
+
+
+            }
+
+        }
+
+
+
+        .video-container {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(243 * var(--unit));
+
+            margin: calc(43 * var(--unit)) auto 0 auto;
+
+            background: var(--b2);
+
+        }
+
+
+
+        .video-container video {
+
+            width: calc(432 * var(--unit));
+
+            height: calc(243 * var(--unit));
+
+        }
+
+
+
+        .button-section {
+
+            width: calc(416 * var(--unit));
+
+            height: calc(144 * var(--unit));
+
+            margin: calc(108 * var(--unit)) auto calc(112 * var(--unit)) auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+        }
+
+
+
+        .button-container {
+
+            width: calc(416 * var(--unit));
+
+            height: calc(64 * var(--unit));
+
+            background: var(--primary);
+
+            border: 0;
+
+            border-radius: calc(32 * var(--unit));
+
+            display: flex;
+
+        }
+
+
+
+        .button-container img {
+
+            width: calc(32 * var(--unit));
+
+            height: calc(32 * var(--unit));
+
+            position: absolute;
+
+            margin: calc(16 * var(--unit)) 0 0 calc(120 * var(--unit));
+
+        }
+
+
+
+        .button-container p {
+
+            width: calc(176 * var(--unit));
+
+            height: calc(32 * var(--unit));
+
+            position: absolute;
+
+            margin: calc(16 * var(--unit)) 0 0 calc(168 * var(--unit));
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--b0);
+
+            cursor: pointer;
+
+            font: 400 calc(16 * var(--unit)) "Poppins";
+
+        }
+
+
+
+        .button-container:hover {
+
+            transition: 0.3s ease;
+
+            transform: scale(1.05);
+
+        }
+
+    }
+
+}
