@@ -1,7 +1,7 @@
 
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store/store";
-import { getText } from "../constants/pages/GottyPageText"
+import { getText } from "../constants/pages/RyuzuPageText"
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer";
