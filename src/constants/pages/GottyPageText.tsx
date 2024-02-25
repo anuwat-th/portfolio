@@ -28,7 +28,7 @@ export const translations = {
 
         en: `Gotty is an application developed using the React Native framework. It presents the concept of a social media application where users can share photos and videos and users can like and comment.`,
 
-        th: `Gotty คือแอปพลิเคชันที่พัฒนาโดยใช้เฟรมเวิร์ก React โดยโครงงานนี้นำเสนอแนวคิดของแอปพลิเคชันโซเชียลที่ผู้ฝช้สามารถใช้เพื่อแบ่งปันรูปภาพและวิดีโอและผู้ใช้ยังสามารถกดไลค์และแสดงความคิดเห็นได้ด้วย`,
+        th: `Gotty คือแอปพลิเคชันที่พัฒนาโดยใช้เฟรมเวิร์ก React Native โดยโครงงานนี้นำเสนอแนวคิดของแอปพลิเคชันโซเชียลที่ผู้ฝช้สามารถใช้เพื่อแบ่งปันรูปภาพและวิดีโอและผู้ใช้ยังสามารถกดไลค์และแสดงความคิดเห็นได้ด้วย`,
 
     },
 
