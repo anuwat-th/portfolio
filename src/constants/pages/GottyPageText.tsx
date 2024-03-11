@@ -16,7 +16,7 @@ export const translations = {
 
     subTitleText: {
 
-        en: `Gotty, social media application develop with React Native+TypeScript`,
+        en: `Gotty, A social media application develop with React Native+TypeScript`,
 
         th: `Gotty, แอปพลิเคชัรโซเชียลที่พัฒนาด้วย React Native+TypeScript`,
 

@@ -42,7 +42,7 @@ export const translations = {
 
     work1Description: {
 
-        en: `Ryuzu web is a e-commerce website. I had create this project for System Analysis and Design class in first semester 2023. `,
+        en: `Ryuzu web is an e-commerce website. I had create this project for System Analysis and Design class in first semester 2023. `,
 
         th: `Ryuzu เป็นเว็บไซต์ e-commerce สร้างตอนเรียนวิชา System Analysis and Design ตอนเทอมแรกปี 2023`,
 
